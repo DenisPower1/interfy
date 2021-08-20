@@ -1,0 +1,10 @@
+{
+  "name": "interfy",
+  "version": "1.0.0",
+  "description": "A Javascript library for robust web front-end routing",
+  "author": "Denis Power",
+  "license": "MIT",
+  "jsdelivr": "interfy.min.js",
+  "repository": "github:DenisPower1/interfy",
+   
+  }
