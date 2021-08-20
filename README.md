@@ -7,9 +7,9 @@ It's was created mainly to be used in Inter's app but you can use it in any kind
 
 It's:
 
-*Easy.
-*light-weight and.
-*enjoyable.
+* Easy.
+* light-weight and.
+* enjoyable.
 
 You can learn more about it just follow the right link for you.
 
