@@ -13,7 +13,7 @@ Você também pode baixar o arquivo js para poderes usar localmente, clique em [
 
 ## Usando
 
-O Interfy dá para nós um constructor, chamado de **Interfy** e quando nós instanciarmos ele teremos os seguintes métodos.
+O Interfy dá para nós um constructor, chamado **Interfy** e quando nós instanciarmos ele, teremos os seguintes métodos.
 
 * createRouter() - É usado para criar o roteador, ele apenas aceita uma função como o seu argumento, a referida função será executada toda vez que uma requisição for feita.
 * setPath() - Esse método é usado para mudar de rota, e a rota deve ser o argumento desse método, rota deve começar com /.
@@ -46,14 +46,14 @@ Isso que nós vimos é o básico da biblioteca.
 
 No Interfy variável é usada para ler rotas dinámicas.
 
-Por exemplo temos a seguinte rota: /africa/pais a rota principal é /africa e sub rota(rota filha) e /pais só que essa sub rota
+Por exemplo temos a seguinte rota: */africa/pais* a rota principal é */africa* e a sub rota(rota filha) e */pais*, só que essa sub rota
 será variável(vai alternando). Ela pode ser:
 
 * /africa/angola
 * /africa/mozambique
 * /africa/zambia
 
-Então, para nós sabermos qual é a sub rota(rota filha) de uma determinada rota devemos usar a váriavel.
+Então, para nós sabermos qual é a sub rota dinámica (rota filha) de uma determinada rota devemos usar a váriavel.
 
 
 
@@ -63,9 +63,9 @@ const int=new Interfy();
 
 int.createRouter((req)=>{
 
-const sub_routa=req.is("/africa/(pais)");
+const sub_rota=req.is("/africa/(pais)");
 
-if(sub_routa){
+if(sub_rota){
 
 const oPais=req.getVar("/africa/(pais)").pais.
 
@@ -108,11 +108,11 @@ const id_do_usuario=req.is("/user/(id)");
 // o método vai retornar true.
 
 })
-````
+```
 
-E nós podemos usar o asterístico (*) para segnificar qualquer coisa.
+E nós podemos usar o asterístico para significar qualquer coisa.
 
-```Javascrript
+```Javascript
 
 
 
@@ -128,14 +128,16 @@ if(rota){
 
 
 })
-````
+```
 
 ### getVar() 
 
-É um método que nós permite ler a variável, ele recebe apenas um argumento, que deve ser a rota com a variável e esse método vai retornar um objecto em que as proprieades são os nomes das váriaveis e os valores são os valores das variáveis.
+É um método que nós permite ler as variáveis da rota requisitada, ele recebe apenas um argumento, que deve ser a rota com as variáveis e esse método vai retornar um objecto em que as propridades são os nomes das váriaveis e os valores são os valores das variáveis.
+
+O nome da variável deve estar sobre parênteses ex:(nome).
 
 
-```Javascrit
+```Javascript
 
 const int=new Interfy()
 
@@ -147,7 +149,7 @@ if(id_do_usuario){
 
 const id=req.getVar("/user/(id)").id;
 
-alert(id) // vai imprimir o valor da variável id.
+alert(id) // vai exibir o valor da variável id.
 
 //id == 38849444
 
