@@ -16,8 +16,8 @@ Você também pode baixar o arquivo js para poderes usar localmente, clique em [
 O Interfy dá para nós um constructor, chamado de **Interfy** e quando nós instanciarmos ele teremos os seguintes métodos.
 
 * createRouter() - É usado para criar o roteador, ele apenas aceita uma função como o seu argumento, a referida função será executada toda vez que uma requisição for feita.
-* setPath() - Esse método é usado para mudar de rota, e a rota deve ser o argumento desse método.
-* useHash() - Esse método funcional idêntico ao *setPath()*, a diferença é que usamos ele quando queremos que as rotas tenham uma cerquilha (#).
+* setPath() - Esse método é usado para mudar de rota, e a rota deve ser o argumento desse método, rota deve começar com /.
+* useHash() - Esse método tem um funcionamemnto idêntico ao *setPath()*, a diferença é que usamos ele quando queremos que as rotas tenham cerquilha (#), ex:/#/user/93939.
 
 ### Exemplo
 
@@ -44,16 +44,16 @@ Isso que nós vimos é o básico da biblioteca.
 
 ### Varíaveis.
 
-No Interfy variável é uma parte da routa que é dinámica.
+No Interfy variável é usada para ler rotas dinámicas.
 
-Por exemplo temos a seguinte rota: /africa/pais a routa principal é /africa e sub routa(rota filha) e /pais só que essa sub routa
+Por exemplo temos a seguinte rota: /africa/pais a rota principal é /africa e sub rota(rota filha) e /pais só que essa sub rota
 será variável(vai alternando). Ela pode ser:
 
 * /africa/angola
 * /africa/mozambique
 * /africa/zambia
 
-Então, para nós sabermos qual é a sub routa(rota filha) de uma determinada routa devemos usar a váriavel.
+Então, para nós sabermos qual é a sub rota(rota filha) de uma determinada rota devemos usar a váriavel.
 
 
 
@@ -83,10 +83,9 @@ int.setPath("/paises/angola")
 ```
 
 
-Tá tudo explicito né? Agora vamos conhecer profundamente o parametro **req** que está sendo muito usado aqui.
+Tá tudo explicíto né? Agora vamos conhecer profundamente o parametro **req** que está sendo muito usado aqui.
 
-o req seria uma abreviação para requisição ou request, ele é um objecto que tem alguns métodos e propriedade que vão
-nos nos fornecer mais informações sobre a url requisita.
+O req seria uma abreviação para requisição ou request, ele é um objecto que tem alguns métodos e propriedade que vão nos fornecer mais informações sobre a url requisitada.
 
 ### url 
 
@@ -94,7 +93,7 @@ nos nos fornecer mais informações sobre a url requisita.
 
 ### is() 
 
-É um método que nós permite verificar a estrutura da rota(quando ela tem sub rotas váriaveis), se a estrutura for verdadeira retorna true caso o contraio retorna false.
+É um método que nós permite verificar a estrutura da rota(quando ela tem sub rotas váriaveis), se a estrutura for verdadeira retorna true caso o contrário retorna false.
 
 
 
@@ -109,12 +108,13 @@ const id_do_usuario=req.is("/user/(id)");
 // o método vai retornar true.
 
 })
+````
 
-
+E nós podemos usar o asterístico (*) para segnificar qualquer coisa.
 
 ```Javascrript
 
-E nós podemos usar o asterístico para segnificar qualquer coisa.
+
 
 int.createRouter((req)=>{
 
@@ -132,7 +132,7 @@ if(rota){
 
 ### getVar() 
 
-É um método que nós permite ler a variável, ela recebe apenas um argumento, que deve ser a rota com a variável e esse método vai retornar um objecto em que as proprieades são os nomes das váriaveis e os valores são os valores das variáveis.
+É um método que nós permite ler a variável, ele recebe apenas um argumento, que deve ser a rota com a variável e esse método vai retornar um objecto em que as proprieades são os nomes das váriaveis e os valores são os valores das variáveis.
 
 
 ```Javascrit
@@ -158,6 +158,8 @@ alert(id) // vai imprimir o valor da variável id.
 int.setPath("/user/38849444");
 
 ```
+
+A rotas podem ter quantas variáveis quiseres.
 
 ## Conclusão
 
