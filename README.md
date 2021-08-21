@@ -14,4 +14,4 @@ It's was created mainly to be used in [apps created with Inter](https://github.c
 You can learn more about it click on [read tutorial](https://github.com/DenisPower1/interfy/blob/main/tutorial/pt/index.md)
 
 
-REALESED UNDER THE MIT LINCENSE BY [Denis Powe](https://github.com/DenisPower1)
+MIT LICENSE BY [Denis Powe](https://github.com/DenisPower1)
