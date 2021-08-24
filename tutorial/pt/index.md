@@ -83,17 +83,17 @@ int.setPath("/paises/angola")
 ```
 
 
-Tá tudo explicíto né? Agora vamos conhecer profundamente o parametro **req** que está sendo muito usado aqui.
+Tá tudo explicíto né? Agora vamos conhecer profundamente o parámetro **req** que está sendo muito usado aqui.
 
 O req seria uma abreviação para requisição ou request, ele é um objecto que tem alguns métodos e propriedade que vão nos fornecer mais informações sobre a url requisitada.
 
 ### url 
 
-É uma propriedade só de leitura, que nós permite obter a rota requisitada
+É uma propriedade só de leitura, que nos permite obter a rota requisitada.
 
 ### is() 
 
-É um método que nós permite verificar a estrutura da rota(quando ela tem sub rotas váriaveis), se a estrutura for verdadeira retorna true caso o contrário retorna false.
+É um método que nos permite verificar a estrutura da rota(quando ela tem sub rotas váriaveis), se a estrutura for verdadeira retorna true caso o contrário retorna false.
 
 
 
@@ -134,7 +134,7 @@ if(rota){
 
 É um método que nós permite ler as variáveis da rota requisitada, ele recebe apenas um argumento, que deve ser a rota com as variáveis e esse método vai retornar um objecto em que as propridades são os nomes das váriaveis e os valores são os valores das variáveis.
 
-O nome da variável deve estar sobre parênteses ex:(nome).
+O nome da variável deve estar entre parênteses ex:(nome).
 
 
 ```Javascript
@@ -161,7 +161,7 @@ int.setPath("/user/38849444");
 
 ```
 
-A rotas podem ter quantas variáveis quiseres.
+As rotas podem ter quantas variáveis quiseres.
 
 ## Conclusão
 
