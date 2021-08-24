@@ -17,7 +17,7 @@ O Interfy dá para nós um constructor, chamado **Interfy** e quando nós instan
 
 * createRouter() - É usado para criar o roteador, ele apenas aceita uma função como o seu argumento, a referida função será executada toda vez que uma requisição for feita.
 * setPath() - Esse método é usado para mudar de rota, e a rota deve ser o argumento desse método, rota deve começar com /.
-* useHash() - Esse método tem um funcionamemnto idêntico ao *setPath()*, a diferença é que usamos ele quando queremos que as rotas tenham cerquilha (#), ex:/#/user/93939.
+* useHash() - Esse método tem um funcionamento idêntico ao *setPath()*, a diferença é que usamos ele quando queremos que as rotas tenham cerquilha (#), ex:/#/user/93939.
 
 ### Exemplo
 
@@ -132,7 +132,7 @@ if(rota){
 
 ### getVar() 
 
-É um método que nós permite ler as variáveis da rota requisitada, ele recebe apenas um argumento, que deve ser a rota com as variáveis e esse método vai retornar um objecto em que as propridades são os nomes das váriaveis e os valores são os valores das variáveis.
+É um método que nos permite ler as variáveis da rota requisitada, ele recebe apenas um argumento, que deve ser a rota com as variáveis e esse método vai retornar um objecto em que as propridades são os nomes das váriaveis e os valores são os valores das variáveis.
 
 O nome da variável deve estar entre parênteses ex:(nome).
 
