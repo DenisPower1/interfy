@@ -161,7 +161,7 @@ int.setPath("/user/38849444");
 
 ```
 
-As rotas podem ter quantas variáveis quiseres.
+As rotas podem ter quantas variáveis quiseres, e as variáveis devem estar em letras minúsculas.
 
 ## Conclusão
 
