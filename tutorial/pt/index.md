@@ -5,6 +5,8 @@ Para começar a usar o **Interfy** é muito simples, basta você importar ele em
 
 ## Instalacção
 
+ ### Usando CDN
+
 ```Javascript
 <script src="https://cdn.jsdelivr.net/gh/DenisPower1/interfy@1.0.0/interfy.js"></script>
 ```
