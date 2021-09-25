@@ -3,7 +3,7 @@
 
 Para começar a usar o **Interfy** é muito simples, basta você importar ele em sua página a partir de uma tag script.
 
-## Instalacção
+## Instalação
 
  ### Usando CDN
 
@@ -18,7 +18,7 @@ Você também pode baixar o arquivo js para poderes usar localmente, clique em [
 O Interfy dá para nós um constructor, chamado **Interfy** e quando nós instanciarmos ele, teremos os seguintes métodos.
 
 * createRouter() - É usado para criar o roteador, ele apenas aceita uma função como o seu argumento, a referida função será executada toda vez que uma requisição for feita.
-* setPath() - Esse método é usado para mudar de rota, e a rota deve ser o argumento desse método, rota deve começar com /.
+* setPath() - Esse método é usado para mudar de rota, e a rota deve ser o argumento desse método, a rota deve começar com /.
 * useHash() - Esse método tem um funcionamemnto idêntico ao *setPath()*, a diferença é que usamos ele quando queremos que as rotas tenham cerquilha (#), ex:/#/user/93939.
 
 ### Exemplo
