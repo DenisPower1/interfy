@@ -8,10 +8,10 @@ Para começar a usar o **Interfy** é muito simples, basta você importar ele em
  ### Usando CDN
 
 ```Javascript
-<script src="https://cdn.jsdelivr.net/gh/DenisPower1/interfy@1.0.0/interfy.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/DenisPower1/interfy@1.0.1/interfy.js"></script>
 ```
 
-Você também pode baixar o arquivo js para poderes usar localmente, clique em [baixar](https://github.com/DenisPower1/interfy/releases/download/v1.0.0/interfy.min.js)
+Você também pode baixar o arquivo js para poderes usar localmente, clique em [baixar](https://github.com/DenisPower1/interfy/releases/download/v1.0.1/interfy.min.js)
 
 ## Usando
 
