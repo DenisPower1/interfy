@@ -1,7 +1,7 @@
 /** 
  *  Interfy - A Javascript library for robust web front-end routing.
  * 
- *  Github's repo - https://github.com/DenisPower1/Int
+ *  Github's repo - https://github.com/DenisPower1/interfy
  *  version - 1.0.1
  * 
  *  Created by - Denis Power/ https://github.com/DenisPower1
