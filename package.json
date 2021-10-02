@@ -6,5 +6,8 @@
   "license": "MIT",
   "jsdelivr": "interfy.min.js",
   "repository": "github:DenisPower1/interfy",
+  "devDependencies":{
+  "nodejs":"^12.0.0"
+  }
    
   }
