@@ -79,7 +79,7 @@ alert(oPais) // Vai exibir o valor da variável pais.
 
 })
 
-int.setPath("/paises/angola")
+int.setPath("/africa/angola")
 
 
 ```
@@ -132,9 +132,10 @@ if(rota){
 })
 ```
 
+
 ### getVar() 
 
-É um método que nós permite ler as variáveis da rota requisitada, ele recebe apenas um argumento, que deve ser a rota com as variáveis e esse método vai retornar um objecto em que as propridades são os nomes das váriaveis e os valores são os valores das variáveis.
+É um método que nos permite ler as variáveis da rota requisitada, ele recebe apenas um argumento, que deve ser a rota com as variáveis e esse método vai retornar um objecto em que as propridades são os nomes das váriaveis e os valores são os valores das variáveis.
 
 O nome da variável deve estar entre parênteses ex:(nome).
 
