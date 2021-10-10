@@ -1,18 +1,38 @@
 /**
- * THIS MODULE WAS CREATED TO TEST INTER(https://github.com/DenisPower1/inter) AND INTERFY
- * (https://github.com/DenisPower1/interfy) CODEBASE.
- * MUST NOT BE USED IN ANY OTHER SITUATION
+ * A simple and elegant Nodejs module
+ * for http routing.
+ * 
+ * THIS MODULE WAS CREATED TO TEST INTER(https://github.com/DenisPower1/inter) 
+ * AND INTERFY
+ * (https://github.com/DenisPower1/interfy) CODE.
+ * MUST NOT BE USED IN ANY OTHER SITUATION.
  * 
  *  THIS CODE WAS CREATED BY DENIS POWER(https://github.com/DenisPower1)
  *  2021.
  */
 
- const http=require("http");
- const fs=require("fs");
 
- const INTER=Object.create(null);
- const REQUEST=Object.create(null);
- let RE;
+ if(typeof window!=="undefined"
+ && window.onload
+ ){
+
+      // This script must not run in browser.
+
+      new Error(`
+      
+      The server module can not run in browser, only in node.
+      
+      `)
+
+ }
+
+
+const http=require("http");
+const fs=require("fs");
+const path=require("path");
+const INTER=Object.create(null);
+const REQUEST=Object.create(null);
+let RE;
 
 Object.isObj=function(obj){
 
@@ -22,6 +42,16 @@ Object.isObj=function(obj){
 
  Object.defineProperties(REQUEST
       ,{
+        urlExt:{
+
+  get(){
+
+            // The extension name;
+
+      return path.extname(this.url).replace(/\./,"");
+  }
+
+        },    
        status:{
              get(){
               //If the status is read we must return null;
@@ -39,6 +69,7 @@ Object.isObj=function(obj){
                   throw new Error(`
                   
                    The status property value must be a number.
+
                   `)
              }
              
@@ -55,23 +86,21 @@ Object.isObj=function(obj){
             `)
 
         }else{
-              
-                      if(!fileName.endsWith("favicon.ico")){
-                      fs.readFile(`./${fileName}`, (err,data)=>{
-                        
-                        if(err){
 
-                            throw err;
+            fs.readFile(fileName, (err,d)=>{
 
-                        }else{
+                  if(err){
 
-                              this.send(data);
-                        }
+                        console.error(`The following error occured while
+                        trying to read the ${fileName} file.
+                        `)
 
-                      
-                }
-            }
-              })
+                  }
+
+                  this.send(d)
+
+            })
+      
         }
       }
        },
@@ -109,6 +138,7 @@ Object.isObj=function(obj){
                         throw new Error(`
                         
                         The [request obj].setHeaders value must be an object.
+
                         `)
                   }else{
 
@@ -163,7 +193,7 @@ Object.isObj=function(obj){
                               if(req.method!="GET"){
                                     
                                     throw new Error(`
-                                    ${req.method} request is forbidden,
+                                    "${req.method}" request is forbidden,
                                     this server only accepts GET request.
                                     `)
                               }else{
@@ -177,4 +207,9 @@ Object.isObj=function(obj){
        }
  })
 
- exports.Inter=INTER;
+ Object.freeze(INTER);
+ Object.preventExtensions(REQUEST);
+
+const Inter=INTER;
+
+exports.Inter=Inter;
