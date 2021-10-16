@@ -48,7 +48,7 @@ Isso que nós vimos é o básico da biblioteca.
 
 No Interfy variável é usada para ler rotas dinámicas.
 
-Por exemplo temos a seguinte rota: */africa/pais* a rota principal é */africa* e a sub rota(rota filha) e */pais*, só que essa sub rota
+Por exemplo temos a seguinte rota: */africa/pais* a rota principal é */africa* e a sub rota(rota filha) é */pais*, só que essa sub rota
 será variável(vai alternando). Ela pode ser:
 
 * /africa/angola
