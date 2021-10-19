@@ -7,8 +7,8 @@
   "jsdelivr": "interfy.min.js",
   "repository": "github:DenisPower1/interfy",
   "devDependencies":{
-  "nodejs":"^12.0.0",
-  "inter":"^1.2.0"
+  "nodejs":">=12.0.0",
+  "inter":">=1.2.0"
   }
    
   }
