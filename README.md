@@ -11,7 +11,7 @@ It's was created especially to be used in [apps created with Inter](https://gith
 * light-weight and.
 * enjoyable.
 
-You can learn more about it click on [read tutorial](https://github.com/DenisPower1/interfy/blob/main/tutorial/pt/index.md)
+You can learn more about it click on [read tutorial](https://github.com/DenisPower1/interfy/blob/main/tutorial/pt/)
 
 
 MIT LICENSE BY [Denis Power](https://github.com/DenisPower1)
