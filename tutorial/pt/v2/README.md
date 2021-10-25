@@ -74,7 +74,7 @@ Na segunda rota registada(/user/(id)), a rota tem uma sub rota variável. A rota
 
 Como você deve ter notado, a sub rota da rota /user que é a /(id) vai variando e para nós obtermos o valor dessa rota nós usamos o conceito de variáveis. O (id) indica que aquela sub rota vai estar variando, e os valores daquela sub rota serão chamados id, a função que será executada quando a referida rota for requisitada, será executada com um argumento, que será um objecto, as propriedades desse objeto serão os nomes das variáveis e os valores serão obviamente os valores das variáveis.
 
-Na terceira rota(/?q=*) o asterisco significa qualquer coisa, essa rota tem uma queryString, e a função que será executada quando essa rota for requisitada, será executada com dois argumentos, o primeiro será um objecto  vazio(se a rota não tiver variáveis), e o segundo será um objecto em que os nomes das propriedades serão os parámetros da queryString  e os valores serão os valores dos respectivos parámetros. No exemplo, o parâmetro é o "q", se nós requisitássemos essa rota da seguinte forma:
+Na terceira rota(/?q=*) o asterisco significa qualquer coisa, essa rota tem uma queryString, e a função que será executada quando essa rota for requisitada, será executada com dois argumentos, o primeiro será um objecto  vazio(se a rota não tiver variáveis), e o segundo será um objecto em que os nomes das propriedades serão os parámetros da queryString  e os valores serão os valores dos respectivos parámetros. No exemplo, o parámetro é o "q", se nós requisitássemos essa rota da seguinte forma:
 
 ```javascript
 
@@ -82,9 +82,9 @@ int.setPath("/?q=routing lib")
 
 ``` 
 
-O valor do parámetro "q" será "routing lib".
+O valor do parámetro "q" seria "routing lib".
 
-E quando uma rota tiver apenas o asterístico, significa que quando for requisitada uma rota que não está registada no roteador a sua função será executada.
+E quando uma rota tiver apenas o asterisco, significa que quando for requisitada uma rota que não está registada no roteador a sua função será executada.
 
 ```javascript
 
