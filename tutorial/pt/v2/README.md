@@ -98,6 +98,6 @@ console.log("A rota não foi encontrada!")
 
 Simples né? O nosso tutorial fica por aqui, qualquer dúvida abra um issue descrevendo a tua dúvida, e se você gostou da biblioteca faça o favor de estrelar esse repositório.
 
-Você também pode dar uma olhada no Inter
+Você também pode dar uma olhada no [Inter](https://github.com/DenisPower1/inter) também.
 
 ## Seja feliz!
