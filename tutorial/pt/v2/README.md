@@ -5,10 +5,10 @@
 A Interfy é uma biblioteca Javascript que nos entrega um sistema de roteamento robusto para aplicações web front-end. Ele foi feito especialmente para ser uma opção mais robusta ao [roteador](http://interjs.epizy.com/v1/tutorial/pt/roteador) do [Inter](https://github.com/DenisPower1/inter).
 Apesar de fazer parte do ecossistema do Inter, ela pode ser usada sem o Inter!
 Ela é:
-•	Fácil
-•	Divertida
-•	Simples
-•	Robusta
+*	Fácil
+*	Divertida
+*	Simples
+*	Robusta
 
 ## Instalação
 ##### A Intefy deve ser usada em páginas que usam o protocolo http ou https.
@@ -23,8 +23,8 @@ Você pode baixar o *source* do Interfy clicando em [baixar](https://github.com/
 
 ## Sintaxe.
 A Intefy dá-nos um constructor chamado Interfy, quando ele (o constructor) for instanciado vai nos fornecer os seguintes métodos:
-*	route() – É usado para registar uma rota. Ele recebe dois argumentos, o primeiro será a rota que será registada, o segundo será a função que será executada quando a rota for requisitada.
-*	start() – É usado para começar o roteamento. Ele aceita uma função como o seu argumento, e a referida função será executada toda vez que uma rota for requisitada, ela será executada com um argumento que vai indicar a rota requisitada.
+*	route() – É usado para registar uma rota. Ele recebe dois argumentos, o primeiro argumento deve ser a rota que será registada, o segundo deve ser a função que será executada quando a rota for requisitada.
+*	start() – É usado para anicializar o roteador. Ele aceita uma função como o seu argumento, e a referida função será executada toda vez que uma rota for requisitada, ela será executada com um argumento que vai indicar a rota requisitada.
 *	setPath() – É usado para trocar a url, e a mesma url será requisitada(no roteador criado pela biblioteca). Ele apenas aceita um argumento, que deve ser a rota que será requisitada e deve começar com /.
 *	useHash – Também é usado para trocar a url, mas a url usará cerquilha, ex: /#/user/8389.
 
