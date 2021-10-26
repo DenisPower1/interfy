@@ -2,9 +2,11 @@
 #### Esse tutorial pressupõe que você tenha pelo menos conhecimento intermediário em Javascript.
 
 ## Introduçao
-A Interfy é uma biblioteca Javascript que nos entrega um sistema de roteamento robusto para aplicações web front-end. Ele foi feito especialmente para ser uma opção mais robusta ao [roteador](http://interjs.epizy.com/v1/tutorial/pt/roteador) do [Inter](https://github.com/DenisPower1/inter).
+A Interfy é uma biblioteca Javascript que nos entrega um sistema de roteamento robusto para aplicações web front-end. Ela foi feita especialmente para ser uma opção mais robusta ao [roteador](http://interjs.epizy.com/v1/tutorial/pt/roteador) do [Inter](https://github.com/DenisPower1/inter).
 Apesar de fazer parte do ecossistema do Inter, ela pode ser usada sem o Inter!
+
 Ela é:
+
 *	Fácil
 *	Divertida
 *	Simples
@@ -24,7 +26,7 @@ Você pode baixar o *source* do Interfy clicando em [baixar](https://github.com/
 ## Sintaxe.
 A Intefy dá-nos um constructor chamado Interfy, quando ele (o constructor) for instanciado vai nos fornecer os seguintes métodos:
 *	route() – É usado para registar uma rota. Ele recebe dois argumentos, o primeiro argumento deve ser a rota que será registada, o segundo deve ser a função que será executada quando a rota for requisitada.
-*	start() – É usado para anicializar o roteador. Ele aceita uma função como o seu argumento, e a referida função será executada toda vez que uma rota for requisitada, ela será executada com um argumento que vai indicar a rota requisitada.
+*	start() – É usado para anicializar o roteador. Ele aceita opcionalmente uma função como o seu argumento, e a referida função será executada toda vez que uma rota for requisitada, ela será executada com um argumento que vai indicar a rota requisitada.
 *	setPath() – É usado para trocar a url, e a mesma url será requisitada(no roteador criado pela biblioteca). Ele apenas aceita um argumento, que deve ser a rota que será requisitada e deve começar com /.
 *	useHash – Também é usado para trocar a url, mas a url usará cerquilha, ex: /#/user/8389.
 
@@ -72,7 +74,13 @@ Na segunda rota registada(/user/(id)), a rota tem uma sub rota variável. A rota
 * /user/904093
 * /user/020331 
 
-Como você deve ter notado, a sub rota da rota /user que é a /(id) vai variando e para nós obtermos o valor dessa rota nós usamos o conceito de variáveis. O (id) indica que aquela sub rota vai estar variando, e os valores daquela sub rota serão chamados id, a função que será executada quando a referida rota for requisitada, será executada com um argumento, que será um objecto, as propriedades desse objeto serão os nomes das variáveis e os valores serão obviamente os valores das variáveis.
+Como você deve ter notado, a sub rota da rota */user* que é a /(id) vai ser dinámica, e para nós obtermos a sub rota dinámica, nós usamos o conceito de variáveis. O (id) indica que aquela sub rota vai estar variando(vai ser dinámica), e aquela sub rota será chamada *id*, a função que será executada quando a referida rota for requisitada, será executada com um argumento, que será um objecto, as propriedades desse objeto serão os nomes das variáveis e os valores serão obviamente os valores das variáveis. Por exemplo
+
+```javascript
+
+int.setPath("/user/38958") // Id do user: 38958 
+
+```
 
 Na terceira rota(/?q=*) o asterisco significa qualquer coisa, essa rota tem uma queryString, e a função que será executada quando essa rota for requisitada, será executada com dois argumentos, o primeiro será um objecto  vazio(se a rota não tiver variáveis), e o segundo será um objecto em que os nomes das propriedades serão os parámetros da queryString  e os valores serão os valores dos respectivos parámetros. No exemplo, o parámetro é o "q", se nós requisitássemos essa rota da seguinte forma:
 
@@ -84,7 +92,7 @@ int.setPath("/?q=routing lib")
 
 O valor do parámetro "q" seria "routing lib".
 
-E quando uma rota tiver apenas o asterisco, significa que quando for requisitada uma rota que não está registada no roteador a sua função será executada.
+E quando uma rota tiver apenas o asterisco, significa que quando for requisitada uma rota que não está registada no roteador a sua função será executada, indicando um NOT FOUND.
 
 ```javascript
 
