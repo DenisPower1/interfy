@@ -29,6 +29,8 @@ A Intefy dá-nos um constructor chamado Interfy, quando ele (o constructor) for 
 *	start() – É usado para anicializar o roteador. Ele aceita opcionalmente uma função como o seu argumento, e a referida função será executada toda vez que uma rota for requisitada, ela será executada com um argumento que vai indicar a rota requisitada.
 *	setPath() – É usado para trocar a url, e a mesma url será requisitada(no roteador criado pela biblioteca). Ele apenas aceita um argumento, que deve ser a rota que será requisitada e deve começar com /.
 *	useHash – Também é usado para trocar a url, mas a url usará cerquilha, ex: /#/user/8389.
+* version - É uma propriedade só de leitura, que retorna a versão do Inter instalada.
+
 
 ### Exemplo:
 
