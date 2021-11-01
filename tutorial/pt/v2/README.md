@@ -17,11 +17,11 @@ Ela é:
 Para instalares a Interfy é muito simples, basta importares ela para a tua página a partir de uma tag script:
 #### Usando CDN
 ```html
-<script src="https://cdn.jsdelivr.net/gh/DenisPower1/interfy@2.0.0/interfy.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/DenisPower1/interfy@2.0.1/interfy.min.js"></script>
 ```
 #### Usando localmente
 
-Você pode baixar o *source* do Interfy clicando em [baixar](https://github.com/DenisPower1/interfy/releases/download/v2.0.0/interfy.min.js).
+Você pode baixar o *source* do Interfy clicando em [baixar](https://github.com/DenisPower1/interfy/releases/download/v2.0.1/interfy.min.js).
 
 ## Sintaxe.
 A Intefy dá-nos um constructor chamado Interfy, quando ele (o constructor) for instanciado vai nos fornecer os seguintes métodos:
@@ -108,6 +108,6 @@ console.log("A rota não foi encontrada!")
 
 Simples né? O nosso tutorial fica por aqui, qualquer dúvida abra um issue descrevendo a tua dúvida, e se você gostou da biblioteca faça o favor de estrelar esse repositório.
 
-Você também pode dar uma olhada no [Inter](https://github.com/DenisPower1/inter) também.
+Você também pode dar uma olhada no [Inter](https://github.com/DenisPower1/inter).
 
 ## Seja feliz!
