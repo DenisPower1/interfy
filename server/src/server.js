@@ -11,7 +11,6 @@
  *  2021.
  */
 
-
  if(typeof window!=="undefined"
  && window.onload
  ){
@@ -51,6 +50,13 @@ Object.isObj=function(obj){
       return path.extname(this.url).replace(/\./,"");
   }
 
+        },
+        getHeaders:{
+              value(){
+
+                  return RE[0].headers
+
+              }
         },    
        status:{
              get(){
@@ -93,6 +99,7 @@ Object.isObj=function(obj){
 
                         console.error(`The following error occured while
                         trying to read the ${fileName} file.
+                        ${err}
                         `)
 
                   }
@@ -189,7 +196,12 @@ Object.isObj=function(obj){
                        `)
 
                      }
+
+                     
                         http.createServer((req,res)=>{
+                     
+                              
+
                               if(req.method!="GET"){
                                     
                                     throw new Error(`
