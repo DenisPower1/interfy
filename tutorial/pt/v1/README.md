@@ -63,6 +63,7 @@ Então, para nós sabermos qual é a sub rota dinámica (rota filha) de uma dete
 
 ```Javascript
 
+
 const int=new Interfy();
 
 int.createRouter((req)=>{
