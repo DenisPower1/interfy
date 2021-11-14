@@ -48,17 +48,17 @@ console.log("A rota / foi requisitada")
 
 })
 
-int.route("/user/(id)", (var)=>{
+int.route("/user/(id)", (o)=>{
 
 // Executa quando a rota /user/qualquerinformação for requisitada
 
-console.log(`Id do user :${ var.id}`) 
+console.log(`Id do user :${ o.var.id}`) 
 
 })
 
-int.route("/?q=*", (_,params)=>{
+int.route("/?q=*", (o)=>{
 
-console.log(`Pesquisando por: ${params.q}`);
+console.log(`Pesquisando por: ${o.param.q}`);
 
 })
 
@@ -78,7 +78,7 @@ Na segunda rota registada(/user/(id)), a rota tem uma sub rota variável. A rota
 * /user/904093
 * /user/020331 
 
-Como você deve ter notado, a sub rota da rota */user* que é a /(id) vai ser dinámica, e para nós obtermos a sub rota dinámica, nós usamos o conceito de variáveis. O (id) indica que aquela sub rota vai estar variando(vai ser dinámica), e aquela sub rota será chamada *id*, a função que será executada quando a referida rota for requisitada, será executada com um argumento, que será um objecto, as propriedades desse objeto serão os nomes das variáveis e os valores serão obviamente os valores das variáveis. Por exemplo
+Como você deve ter notado, a sub rota da rota */user* que é a /(id) vai ser dinámica, e para nós obtermos a sub rota dinámica, nós usamos o conceito de variáveis. O (id) indica que aquela sub rota vai estar variando(vai ser dinámica), e aquela sub rota será chamada *id*, a função que será executada quando a referida rota for requisitada, será executada com um argumento, que será um objecto que terá duas propriedades a *var* e a *param* e essas mesmas propriedades serão também objectos. As propriedades do objeto *var* serão os nomes das variáveis e os valores serão obviamente os valores das variáveis. Por exemplo
 
 ```javascript
 
@@ -86,7 +86,7 @@ int.setPath("/user/38958") // Id do user: 38958
 
 ```
 
-Na terceira rota(/?q=*) o asterisco significa qualquer coisa, essa rota tem uma queryString, e a função que será executada quando essa rota for requisitada, será executada com dois argumentos, o primeiro será um objecto  vazio(se a rota não tiver variáveis), e o segundo será um objecto em que os nomes das propriedades serão os parámetros da queryString  e os valores serão os valores dos respectivos parámetros. No exemplo, o parámetro é o "q", se nós requisitássemos essa rota da seguinte forma:
+Na terceira rota(/?q=*) o asterisco significa qualquer coisa, essa rota tem uma queryString, quando uma rota tem uma queryString, os nomes das proprieades do objecto *param*, serão os nomes dos parámetros da queryString e os valores, serão os valores dos respectivos parámetros. No exemplo, o parámetro é o "q", se nós requisitássemos essa rota da seguinte forma:
 
 ```javascript
 
