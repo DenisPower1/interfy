@@ -17,13 +17,15 @@ Ela é:
 Para instalares a Interfy é muito simples, basta importares ela para a tua página a partir de uma tag script:
 #### Usando CDN
 ```html
-<script src="https://cdn.jsdelivr.net/gh/DenisPower1/interfy@2.0.1/interfy.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/DenisPower1/interfy@2.0.1/interfy.g.min.js"></script>
 ```
 #### Usando localmente
 
-Você pode baixar o *source* do Interfy clicando em [baixar](https://github.com/DenisPower1/interfy/releases/download/v2.0.1/interfy.min.js).
+Você pode baixar o *source* do Interfy clicando em [baixar](https://github.com/DenisPower1/interfy/releases/download/v2.0.1/interfy.g.min.js).
+
 
 ## Sintaxe.
+
 A Intefy dá-nos um constructor chamado Interfy, quando ele (o constructor) for instanciado vai nos fornecer os seguintes métodos:
 *	route() – É usado para registar uma rota. Ele recebe dois argumentos, o primeiro argumento deve ser a rota que será registada, o segundo deve ser a função que será executada quando a rota for requisitada.
 *	start() – É usado para anicializar o roteador. Ele aceita opcionalmente uma função como o seu argumento, e a referida função será executada toda vez que uma rota for requisitada, ela será executada com um argumento que vai indicar a rota requisitada.
@@ -103,6 +105,39 @@ int.route("*", ()=>{
 console.log("A rota não foi encontrada!")
 
 })
+
+```
+
+
+
+## Versão Modularizada
+
+A partir da versão [2.1.0](https://github.com/inter-frame/interfy/releases/tag/v2.1.0), nós podemos usar modulos no Interfy basta fazer o seguinte:
+
+#### CDN
+
+```javascript
+
+import {Interfy} from "https://cdn.jsdelivr.net/gh/DenisPower1/interfy@2.1.0/module/interfy.m.js"
+
+const int=new Interfy();
+
+int.route("/", ()=>{})
+
+```
+
+#### Localmente
+
+Baixe a versão modularizada clicando em [baixar](https://github.com/inter-frame/interfy/releases/download/v2.1.0/interfy.m.js)
+
+
+```javascript
+
+import {Interfy} from "./interfy.m.js"
+
+const int=new Interfy();
+
+int.route("/", ()=>{})
 
 ```
 
