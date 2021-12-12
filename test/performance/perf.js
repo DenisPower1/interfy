@@ -112,18 +112,12 @@
 
 
      PERF.prototype={
-
-      set toString(v){
-
-         return null
-
-      },
-
-      toString(){
-
-         return "[object Perf]"
-
-      }
+      
+         get [Symbol.toStringTag](){
+         
+         return "Performance";
+         
+         }
 
 
 
