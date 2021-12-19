@@ -13,8 +13,8 @@ It's was created especially to be used in [apps created with Inter](https://gith
 
 You can learn more about it click on:
 
-[tutorial in English](https://github.com/interjs/interfy/blob/main/tutorial/en/v2)
-[tutorial in Portuguese](https://github.com/interjs/interfy/blob/main/tutorial/pt/v2)
+* [tutorial in English](https://github.com/interjs/interfy/blob/main/tutorial/en/v2)
+* [tutorial in Portuguese](https://github.com/interjs/interfy/blob/main/tutorial/pt/v2)
 
 
 MIT LICENSE BY [Denis Power](https://github.com/DenisPower1)
