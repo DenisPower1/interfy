@@ -755,7 +755,7 @@ _INTERFY.prototype={
 	
 	return "Interfy";
 	
-	}
+	},
 	
      /**
       * Read only property.
