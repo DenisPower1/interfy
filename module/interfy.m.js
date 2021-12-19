@@ -758,7 +758,7 @@ _INTERFY.prototype={
 	
      /**
       * Read only property.
-      * Get the actual Inter's version
+      * Get the actual Intery's version
       * installed. 
       *
       */
