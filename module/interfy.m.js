@@ -750,7 +750,12 @@ let production=false;
 
 _INTERFY.prototype={
 
+    get [Symbol.toStringTag](){
     
+    return "Interfy";
+	    
+    },
+	
      /**
       * Read only property.
       * Get the actual Inter's version
