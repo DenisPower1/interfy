@@ -5,10 +5,11 @@
   "author": "Denis Power",
   "license": "MIT",
   "jsdelivr": "interfy.min.js",
-  "repository": "github:DenisPower1/interfy",
+  "repository": "github:interjs/interfy",
   "devDependencies":{
   "nodejs":">=12.0.0",
-  "inter":">=1.2.0"
+  "inter":">=1.2.0",
+   "inter-complete":"^1.0.0" 
   }
    
   }
