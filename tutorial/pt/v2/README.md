@@ -86,7 +86,7 @@ int.setPath("/user/38958") // Id do user: 38958
 
 ```
 
-Na terceira rota(/?q=*) o asterisco significa qualquer coisa, essa rota tem uma queryString, quando uma rota tiver uma queryString, os nomes das proprieades do objecto *param*, serão os nomes dos parámetros da queryString e os valores, serão os valores dos respectivos parámetros. No exemplo, o parámetro é o "q", se nós requisitássemos essa rota da seguinte forma:
+Na terceira rota(/?q=*) o asterisco significa qualquer coisa, essa rota tem uma queryString, quando uma rota tiver uma queryString, os nomes das propriedades do objecto *param*, serão os nomes dos parámetros da queryString e os valores, serão os valores dos respectivos parámetros. No exemplo, o parámetro é o "q", se nós requisitássemos essa rota da seguinte forma:
 
 ```javascript
 
